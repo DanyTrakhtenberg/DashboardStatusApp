@@ -1,0 +1,12 @@
+<mat-grid-list cols="4" rowHeight="1:2">
+
+  <mat-grid-tile *ngFor="let client of clientsStatus$ |async"  >
+    <app-client-status [client]="client" ></app-client-status>
+  </mat-grid-tile>
+
+
+</mat-grid-list>
+
+
+
+

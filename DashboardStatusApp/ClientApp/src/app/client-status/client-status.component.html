@@ -1,0 +1,17 @@
+
+<mat-card class="card" >
+  <mat-card-header>
+    <div *ngIf="client.isOnline"    mat-card-avatar class="online-image"></div>
+    <div *ngIf="client.isOnline === false"    mat-card-avatar class="offline-image"></div>
+
+    <mat-card-title>IP:{{client.clientType.ip}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p><b>LocalTime:</b>{{client.clientType.localTime}}</p>
+    <p><b>Resolution:</b>{{client.clientType.resolution}}</p>
+    <p><b>TimeZone:</b>{{client.clientType.timeZone}}</p>
+    <p><b>Browser:</b>{{client.clientType.browser}}</p>
+
+  </mat-card-content>
+
+</mat-card>
